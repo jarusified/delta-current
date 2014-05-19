@@ -381,17 +381,17 @@ myApp.controller('Project-up', ['$scope', function ($scope) {
                                                     //Fetch this object from the server
 													
     $scope.bios.profile = [{						// Include data here for projects page
-		"project": "project",
+		"project": "Pragyan CMS",
 		"src" :"img/h.jpg",
 		"id":"#content_cms"
     },
 	{
-		"project": "project1",
+		"project": "Courses App",
 		"src" :"img/joker.jpg",
 		"id":"#content_courses"
 	},
 	{
-		"project": "project2",
+		"project": "Gracenote",
 		"src" :"img/joker.jpg",
 		"id":"#content_gracenote"
     }

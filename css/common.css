@@ -45,3 +45,17 @@
 	transition: opacity 1s;
 	opacity:1;
 }
+
+/*scrollbar css*/
+
+::-webkit-scrollbar {
+    width: .7em;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
