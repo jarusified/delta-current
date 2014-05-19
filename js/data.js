@@ -394,11 +394,6 @@ myApp.controller('Project-up', ['$scope', function ($scope) {
 		"project": "project2",
 		"src" :"img/joker.jpg",
 		"id":"#content_gracenote"
-    },
-	{
-		"project": "project3",
-		"src" :"img/h.jpg",
-		"id":"#pro3"
     }
 	];
 

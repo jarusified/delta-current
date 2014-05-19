@@ -165,10 +165,10 @@
 </div>
 </div>
 
-	<div class="section" id="section3"><!--
+	<div class="section" id="section3">
 	<div ng-controller="Project-readme">
 	<div ng-repeat="profile in bios.profile">
-		<div  class="panel1">
+		<div id="{{profile.id}}" class="panel1">
 			<nav>
 				<a class="link"	 href="#projects">
 					<span class="fa fa-arrow-circle-o-left"></span>
@@ -183,8 +183,59 @@
 			    	<label>GitHub Repo</label>
 			  	</a>
 			</nav>
-			<div class="content">
-			<div  id="content_cms">
+
+			<div id="content" class="content">
+				
+				
+			</div>
+			
+		</div>
+		</div>
+		</div>
+				
+		<div class="post-container">
+		<div id="page-wrap">
+		
+		<div class="up" ng-controller="Project-up">
+			<div class="post" ng-repeat="profile in bios.profile">
+				<img src="{{profile.src}}" class="img1"/>
+					<div class="caption simple-caption" >
+						<nav>
+							<div id="title">
+										{{profile.project}}
+							</div>
+							<a class="link" href="{{profile.id}}">
+								<span class="fa fa-arrow-circle-o-right arr2">
+								</span>	
+							</a>
+						</nav>		
+					</div>
+			</div>
+		</div>
+		
+		<div class="down" ng-controller="Project-down">	
+		<div class="post" ng-repeat="profile in bios.profile">
+					<img src="{{profile.src}}" class="img1"/>
+					<div class="caption simple-caption">
+						<nav>
+							<div id="title">
+										{{profile.project}}
+							</div>
+							<a class="link" href="{{profile.id}}"</a>
+								<span class="fa fa-arrow-circle-o-right arr2">
+								</span>	
+							</a>
+						</nav>		
+					</div>
+				</div>
+
+		</div>
+		</div>	
+		</div>	y
+		<!--<div id="comingup">
+			<h2> coming soon </h2>
+		</div>-->
+		<div class="prodesc" id="content_cmsdesc">
 				 <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h2>
 				<a name="user-content-pragyancms" class="anchor" href="#pragyancms"><span class="octicon octicon-link"></span></a>PragyanCMS</h2>
 
@@ -223,10 +274,10 @@
 				</ul>
 			</article>
 		</div>
-		<div  id="content_courses">
-			<article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+		<div class="prodesc" id="content_coursesdesc">
+			<article class="markdown-body entry-content" itemprop="mainContentOfPage"><h2>
 				<a name="user-content-courseshub---" class="anchor" href="#courseshub---"><span class="octicon octicon-link"></span></a>CoursesHub 
-				</h1>
+				</h2>
 
 				<p>Access detailed information about college course; like course syllabus, project deadlines, assignments and test schedule. Changes made to class schedule, assignment deadline, etc. are updated in realtime. It also acts as a medium for direct student-professor interaction.</p>
 
@@ -260,7 +311,7 @@
 			</article>
 		</div>
 
-		<div id="content_gracenote">
+		<div class="prodesc" id="content_gracenotedesc">
 			 <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h2>
 				<a name="user-content-gracenote-" class="anchor" href="#gracenote-"><span class="octicon octicon-link"></span></a>Gracenote </h2>
 
@@ -340,55 +391,7 @@
 				<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
 				<li>Create new Pull Request</li>
 				</ol></article>
-			</div>	
-
-		</div> 
-		</div>
-		</div>
-		</div>
-				
-		<div class="post-container">
-		<div id="page-wrap">
-		
-		<div class="up" ng-controller="Project-up">
-		<div class="post" ng-repeat="profile in bios.profile">
-				<img src="{{profile.src}}" class="img1"/>
-					<div class="caption simple-caption">
-						<nav>	
-							<div id="title">
-										{{profile.project}}
-							</div>
-
-							<a class="link" href="{{profile.id}}">
-								<span class="fa fa-arrow-circle-o-right arr2">
-								</span>	
-							</a>
-						</nav>		
-					</div>
-				</div>
-		</div>
-		
-		<div class="down" ng-controller="Project-down">	
-		<div class="post" ng-repeat="profile in bios.profile">
-					<img src="{{profile.src}}" class="img1"/>
-					<div class="caption simple-caption">
-						<nav>
-							<div id="title">
-										{{profile.project}}
-							</div>
-							<a class="link" href="{{profile.id}}">
-								<span class="fa fa-arrow-circle-o-right arr2">
-								</span>	
-							</a>
-						</nav>		
-					</div>
-				</div>
-		</div>
-		</div>	
-		</div>	-->
-		<div id="comingup">
-			<h2> coming soon </h2>
-		</div>
+			</div>
 </div>
 
 	<div class="section" id="section4">
@@ -445,6 +448,7 @@
 		for(var i=0;i<arr.length;i++){
 			if(checkURL!=arr[i]){
 				//document.getElementById(arr[i]).innerHTML='';
+				document.getElementById('section3').childNodes[0].firstChild.childNodes[0].nextSibling.childNodes[i+2].firstChild.nextSibling.childNodes[3].innerHTML = "<div visibility='visible;' min-height='400px;'>"+document.getElementById(arr[i]+'desc').innerHTML+"<div>";	//adding description of the projects to sliding panel
 			}
 		}
 
