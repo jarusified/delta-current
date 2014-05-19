@@ -1,0 +1,194 @@
+.header_blog{
+  position: absolute;
+  top: 0px;
+  left : 0px;
+  background-color: #dfdfdf;
+  width:285%;
+  height: 13%;
+  /*text-align: center;*/
+  -webkit-backface-visibility: hidden; 
+  -webkit-transform: translateZ(0);
+}
+
+.header_blog p {
+    position: absolute; 
+    left:550px;
+    top:1%;
+    left: 16%;
+    color: #333;
+    text-shadow: 1px 3px 10px #000000;
+    font: 60px "Source Sans Pro";
+    text-align: center;
+}
+
+.header2_blog{
+  position: absolute;
+  background-color: #eee ;
+  width:100%; 
+  height:14.5%;
+  -webkit-backface-visibility: hidden; 
+  -webkit-transform: translateZ(0);
+}
+
+.hmblog {
+  position: absolute;
+  cursor: pointer;
+}
+
+.headerhmblog{
+    text-shadow: 0px 1px 1px #666;
+    color: #ffffff; 
+}
+
+.slide .blog{
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin-left:11.5%;
+  height: 70%;
+  margin-top:-15%;
+  text-align: center;
+  background-color:#dadada;
+}
+
+.slide .blog .content{
+  position: absolute;
+  left: 30%;
+  top:10%;
+  background: #dadada;
+  height: 80%;
+  width: 60%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.slide{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+} 
+
+.next{
+  margin-right:5%;
+  -webkit-user-select: none;        
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+}
+.prev{
+  margin-left:5%;
+  -webkit-user-select: none;        
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.slide .blog .blog1auth1{
+  position: relative;
+  top:10%;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:3px solid #000;
+  box-shadow: 0px 1px 1px #ccc;
+}
+.slide .blog .git{
+  position: absolute;
+  color: #000;
+  text-shadow: 0px 1px 1px #999;
+  top: 50%;
+  left: 12%;
+  cursor: pointer;
+}
+
+.slide .blog .gplus{
+  position: absolute;
+  color: #000;
+  text-shadow: 0px 1px 1px #999;
+  top: 60%;
+  left: 12%;
+  cursor: pointer;
+}
+
+.slide .blog .linkedin{
+  position: absolute;
+  color: #000;
+  text-shadow: 0px 1px 1px #999;
+  top: 70%;
+  left: 12%;
+  cursor: pointer;
+}
+
+.slide .blog .labelgit{
+  position: absolute;
+  left: 12%;
+  top: 54%;
+  color: #009999;
+  font-family:"Source Sans Pro";
+  font-size:15px;
+  margin-top: 0px;
+  padding: 0px 10px 0px 10px;
+  line-height: 0em;
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide .blog .labelgplus{
+  position: absolute;
+  left: 12%;
+  top: 64%;
+  color: #009999;
+  font-family:"Source Sans Pro";
+  font-size:15px;
+  margin-top: 0px;
+  padding: 0px 10px 0px 10px;
+  line-height: 0em;
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide .blog .labellinkedin{
+  position: absolute;
+  left: 12%;
+  top: 74%;
+  color: #009999;
+  font-family:"Source Sans Pro";
+  font-size:15px;
+  margin-top: 0px;
+  padding: 0px 10px 0px 10px;
+  line-height: 0em;
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide .blog .git:hover ~ .labelgit
+{
+  opacity: 1;
+  left: 17%;
+}
+
+.slide .blog .gplus:hover ~ .labelgplus
+{
+  opacity: 1;
+  left: 17%;
+}
+
+.slide .blog .linkedin:hover ~ .labellinkedin
+{
+  opacity: 1;
+  left: 17%;
+}

@@ -1,0 +1,226 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body,html{
+	width: 100%;
+	background-color: #eee;
+}
+#section1{
+	overflow:hidden;
+}
+#header
+{
+	left:0px;
+	position:fixed;	
+	top:0px;
+	width:100%;
+	height:100px;
+	background-color:#ddd;
+	z-index:5;
+}
+.title-big{
+	height:20%;
+	float:left;
+	padding-left:50px;
+	color:#111;
+	font-size:60px;
+	font-weight:900;
+	font-family:"Roboto Condensed";
+}
+.title-small{
+	width:25%;
+	padding:5px 0px 20px 53px;
+	color:#111;
+	font-size:12px;
+	font-family:"Source Sans Pro";
+}
+
+.style-title{
+	font-family:"Alegreya Sans SC";
+	width:10%;
+	height:60px;
+	text-align:center;
+	color:#009999;
+	font-size:30px;
+	margin:1% 0% 0% 1%;
+	padding:1% 1% 1% 1%;
+}
+	
+#signin{
+	position:relative;
+	width:500px;
+	float:right;
+	color:#222;
+	font-size:12px;
+	font-family:"Source Sans Pro";
+}
+#signin p{
+	font-size:12px;
+	color:#009999;
+	margin:20px 0px 10px 0px;
+	padding:0px;
+	font-family:"Roboto Condensed";
+	font-size:20px;
+}
+
+.textinput{
+	width:100px;
+	font-family:"Source Sans Pro";
+	font-size:12px;
+	color:#222;
+	background-color:#ddd;
+	border:1px solid #ededed;
+	padding: 4px;
+	margin:0px 5px 0px 5px;
+}
+.textinput:hover{
+	transition:background 1s;
+	background-color:#ccc;
+}
+.submitinput{
+	width:50px;	
+	height:20px;
+	margin:0px 5px 0px 5px;
+	font-family:"Source Sans Pro";
+	font-weight:900;
+	font-size:11px;
+	color:#a0a0a0;
+	background-color:#cdcdcd;
+	border:0px;
+}
+.submitinput:hover{
+	color:#000000;
+	transition:background 1s;
+	background-color:#bbb;
+}
+	
+#mainlist{
+	width:100px;
+	margin:0 auto;
+	cursor:pointer;
+	font-family:"Source Sans Pro";
+	font-size:20px;
+	color:#111;
+}
+		
+.name{
+	position: absolute;
+}
+.name p{
+	color:#111;
+}
+.list{
+	position: fixed;
+	text-align: center;
+	z-index:1;
+}
+
+#list_portals,#list_projects,#list_contact,#list_home,#list_wiki,#list_timeline,#list_induction{
+	opacity:0;
+}
+
+.item {
+	font-size:12px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 16px #eee,
+		0 1px 2px rgba(50,50,50,0.1);
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.info {
+	background: #d8d8d8;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	
+	-webkit-backface-visibility: hidden;
+}
+
+.otherlist h3 {
+	color: #000;
+	letter-spacing: 2px;
+	font-size: 22px;
+	padding: 20px 0px 0px 0px;
+	height: 43px;
+	font-family: 'Source Sans Pro';
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.info p{
+	margin-top:-10px;
+}
+
+.info a {
+	color: #000;
+	text-decoration:none;
+	font-size: 12px;
+	font-weight:600;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Source Sans Pro';
+}
+
+.info a:hover {
+	cursor: pointer;
+	color: #009999;
+}
+
+.item:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+.item:hover .info {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.arrow{
+	width:120px;
+	margin:0 auto;
+	background-repeat:no-repeat;
+	opacity:0.5;
+}
+
+#scroll-down{
+	margin-top:-15%;
+}
+
+.scroll-msg{
+	font-family:'Alegreya Sans SC';
+	width:300px;
+	font-size:20px;
+	color:#009999;
+	margin: 0 auto;
+	margin-bottom:10px;
+}
