@@ -63,7 +63,7 @@ window.requestAnimFrame= (function(callback){
 			
     			$.fn.fullpage({
     				scrollOverflow: true,
-    				normalScrollElements: '#lab,.flex-container,#page-wrap',
+    				normalScrollElements: '#lab,.flex-container,#page-wrap,.scrollable',
     				keyboardScrolling: true,
     				fixedElements: '#go,.item,.info,.list,#portal',
     				anchors:['home', 'portals','projects','contact']

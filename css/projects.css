@@ -144,21 +144,25 @@ tr {
 	
 }
 .content h2{
-	font-size: 60px;
+	font-size: 30px;
 	font-family:"Source Sans Pro";
-	padding: 10px 0px 20px 0px;
-	margin-top: 52px;
+	padding: 10px 0px 0px 0px;
+	margin-top: 22px;
 	color: #009999;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 .content p{
 	font-size: 16px;
-	font-family:"Source Sans Pro";
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 	padding: 10px;
 	color: #000;
 	display: inline-block;
 	padding: 10px;
 	margin: 3px 0px;
+}
+
+.content li{
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 }
 
 nav 

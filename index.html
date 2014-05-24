@@ -231,7 +231,7 @@
 
 		</div>
 		</div>	
-		</div>	y
+		</div>	
 		<!--<div id="comingup">
 			<h2> coming soon </h2>
 		</div>-->
@@ -290,7 +290,7 @@
 				</ul><h2>
 				<a name="user-content-app-link" class="anchor" href="#app-link"><span class="octicon octicon-link"></span></a>App Link</h2>
 
-				<p>The app is live at <a href="http://courseshub.in">http://courseshub.in</a></p>
+				<p>The app is live at <a href="http://courseshub.in" target="_blank">http://courseshub.in</a></p>
 
 				<h2>
 				<a name="user-content-terms-of-use" class="anchor" href="#terms-of-use"><span class="octicon octicon-link"></span></a>Terms of use</h2>
@@ -448,7 +448,7 @@
 		for(var i=0;i<arr.length;i++){
 			if(checkURL!=arr[i]){
 				//document.getElementById(arr[i]).innerHTML='';
-				document.getElementById('section3').childNodes[0].firstChild.childNodes[0].nextSibling.childNodes[i+2].firstChild.nextSibling.childNodes[3].innerHTML = "<div visibility='visible;' min-height='400px;'>"+document.getElementById(arr[i]+'desc').innerHTML+"<div>";	//adding description of the projects to sliding panel
+				document.getElementById('section3').childNodes[0].firstChild.childNodes[0].nextSibling.childNodes[i+2].firstChild.nextSibling.childNodes[3].innerHTML = "<div class='description' visibility='visible;' min-height='400px;'>"+document.getElementById(arr[i]+'desc').innerHTML+"<div>";	//adding description of the projects to sliding panel
 			}
 		}
 
