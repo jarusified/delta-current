@@ -429,14 +429,17 @@ myApp.controller('Project-readme', ['$scope', function ($scope) {
     
 	$scope.bios.profile = [{						// Include data here for projects page
 		"project": "Pragyan CMS",
+		"git" :"https://github.com/delta/pragyan",
 		"id":"content_cms"
     },
 	{
 		"project": "Courses Hub",
+		"git" :"https://github.com/seekshiva/courses",
 		"id":"content_courses"
 	},
 	{
 		"project": "Gracenote",
+		"git": "https://github.com/nobelium/gracenote",
 		"id":"content_gracenote"
     },
 	{

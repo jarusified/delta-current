@@ -178,14 +178,13 @@
 				    <span class="fa fa-download"></span>
 			    	<label>Zip download</label>
 			  	</a>
-			  	<a class="link" href="#">
+			  	<a href="{{profile.git}}" target="_blank" class="link" >
 			    	<span class="fa fa-briefcase"></span>
 			    	<label>GitHub Repo</label>
 			  	</a>
 			</nav>
 
 			<div id="content" class="content">
-				
 				
 			</div>
 			
@@ -447,6 +446,7 @@
 		var arr=['content_cms','content_courses','content_gracenote'];
 		for(var i=0;i<arr.length;i++){
 			if(checkURL!=arr[i]){
+				
 				//document.getElementById(arr[i]).innerHTML='';
 				document.getElementById('section3').childNodes[0].firstChild.childNodes[0].nextSibling.childNodes[i+2].firstChild.nextSibling.childNodes[3].innerHTML = "<div class='description' visibility='visible;' min-height='400px;'>"+document.getElementById(arr[i]+'desc').innerHTML+"<div>";	//adding description of the projects to sliding panel
 			}
