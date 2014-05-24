@@ -405,20 +405,15 @@ myApp.controller('Project-down', ['$scope', function ($scope) {
                                                     //Fetch this object from the server
 													
     $scope.bios.profile = [{						// Include data here for projects page
-		"project": "project4",
+		"project": "Grunt-ffdevtools",
 		"src" :"img/h.jpg",
-		"id":"#pro4"
+		"id":"#grunt_ffdevtools"
     },
 	{
-		"project": "project5",
+		"project": "Luapegjs",
 		"src" :"img/h.jpg",
-		"id":"#pro5"
-	},
-	{
-		"project": "project6",
-		"src" :"img/h.jpg",
-		"id":"#pro6"
-    }
+		"id":"#luapegjs"
+	}
 	];
 
 }]);
@@ -443,21 +438,15 @@ myApp.controller('Project-readme', ['$scope', function ($scope) {
 		"id":"content_gracenote"
     },
 	{
-		"project": "PROJECT4",
-		"id":"pro3"
+		"project": "Grunt-ffdevtools",
+		"git":"https://github.com/deepak1556/grunt-ffdevtools",
+		"id":"grunt_ffdevtools"
     },
 	{
-		"project": "PROJECT5",
-		"id":"pro4"
-    },
-	{
-		"project": "PROJECT6",
-		"id":"pro5"
-    },
-	{
-		"project": "PROJECT7",
-		"id":"pro6"
-    },
+		"project": "Luapegjs",
+		"git":"https://github.com/deepak1556/luapegjs",
+		"id":"luapegjs"
+    }
 	];
 
 }]);

@@ -11,7 +11,7 @@
 #page-wrap{
 	position:absolute;
 	margin:10% 0% 0% 10%;
-	height:18%;
+	height:10%;
 	width:80%;
 	background-color: #dfdfdf;
 	overflow-x:auto;
@@ -138,8 +138,9 @@ tr {
 .content article{
 	position: absolute;
 	top: 1%;
-	max-height: 22%;
+	max-height: 10%;
 	max-width: 90%;
+	min-width: 85%;
 	overflow-y: auto;
 	
 }
