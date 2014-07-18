@@ -205,7 +205,7 @@
 							</div>
 							<a class="link" href="{{profile.id}}">
 								<span class="fa fa-arrow-circle-o-right arr2">
-								</span>	
+								</span>
 							</a>
 						</nav>		
 					</div>
@@ -213,7 +213,7 @@
 		</div>
 		
 		<div class="down" ng-controller="Project-down">	
-		<div class="post" ng-repeat="profile in bios.profile">
+			<div class="post" ng-repeat="profile in bios.profile">
 					<img src="{{profile.src}}" class="img1"/>
 					<div class="caption simple-caption">
 						<nav>
@@ -222,7 +222,7 @@
 							</div>
 							<a class="link" href="{{profile.id}}"</a>
 								<span class="fa fa-arrow-circle-o-right arr2">
-								</span>	
+								</span>
 							</a>
 						</nav>		
 					</div>
@@ -396,13 +396,11 @@
 				<a name="user-content-grunt-ffdevtools" class="anchor" href="#grunt-ffdevtools"><span class="octicon octicon-link"></span></a>Grunt-ffdevtools</h2>
 
 				<p>Grunt task runner for firefox devtools based on the chrome extension by <a href="https://github.com/vladikoff/grunt-devtools" target="_blank">@vladikoff</a></p>
-
 				<p><strong>grunt-devtools not runnning</strong> : 
-				<a href="https://camo.githubusercontent.com/fad343afaf2c17ce7b30eb0a7dcf16422a401b7d/68747470733a2f2f7261772e6769746875622e636f6d2f64656570616b313535362f6772756e742d6666646576746f6f6c732f73637265656e73686f74732f73637265656e73686f74732f4772756e742d646576746f6f6c732d696e6163746976652e706e67" target="_blank"><img src="https://camo.githubusercontent.com/fad343afaf2c17ce7b30eb0a7dcf16422a401b7d/68747470733a2f2f7261772e6769746875622e636f6d2f64656570616b313535362f6772756e742d6666646576746f6f6c732f73637265656e73686f74732f73637265656e73686f74732f4772756e742d646576746f6f6c732d696e6163746976652e706e67" alt="grunt-inactive" data-canonical-src="https://raw.github.com/deepak1556/grunt-ffdevtools/screenshots/screenshots/Grunt-devtools-inactive.png" style="max-width:100%;"></a></p>
+				<img src="img/projects/gruntffdevtools-2.jpg" alt="grunt-inactive" style="max-width:100%;"></p>
 
 				<p><strong>grunt-devtools runnning</strong> : 
-				<a href="https://camo.githubusercontent.com/944357ced3e6b4f8cd85be621b53bb214dd9b606/68747470733a2f2f7261772e6769746875622e636f6d2f64656570616b313535362f6772756e742d6666646576746f6f6c732f73637265656e73686f74732f73637265656e73686f74732f4772756e742d646576746f6f6c732d6163746976652e706e67" target="_blank"><img src="https://camo.githubusercontent.com/944357ced3e6b4f8cd85be621b53bb214dd9b606/68747470733a2f2f7261772e6769746875622e636f6d2f64656570616b313535362f6772756e742d6666646576746f6f6c732f73637265656e73686f74732f73637265656e73686f74732f4772756e742d646576746f6f6c732d6163746976652e706e67" alt="grunt-inactive" data-canonical-src="https://raw.github.com/deepak1556/grunt-ffdevtools/screenshots/screenshots/Grunt-devtools-active.png" style="max-width:100%;"></a></p>
-
+				<img src="img/projects/gruntffdevtools-1.jpg" alt="grunt-inactive" style="max-width:100%;"></p>
 				<h2>
 				<a name="user-content-setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h2>
 
@@ -544,11 +542,7 @@
 		var arr=['content_cms','content_courses','content_gracenote','grunt_ffdevtools','luapegjs'];
 		for(var i=0;i<arr.length;i++){
 			if(checkURL==arr[i]){
-				//console.log(checkURL);
-				
-				//document.getElementById(arr[i]).innerHTML='';
 				document.getElementById('section3').childNodes[0].firstChild.childNodes[0].nextSibling.childNodes[i+2].firstChild.nextSibling.childNodes[3].innerHTML = "<div class='description' visibility='visible;' min-height='400px;'>"+document.getElementById(arr[i]+'desc').innerHTML+"<div>";	//adding description of the projects to sliding panel
-				//console.log(document.getElementById('section3').childNodes[0].firstChild.childNodes[0].nextSibling.childNodes[i+2].firstChild.nextSibling.childNodes[3].innerHTML);
 			}
 		}
 
