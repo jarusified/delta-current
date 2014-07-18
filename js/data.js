@@ -382,17 +382,17 @@ myApp.controller('Project-up', ['$scope', function ($scope) {
 													
     $scope.bios.profile = [{						// Include data here for projects page
 		"project": "Pragyan CMS",
-		"src" :"img/h.jpg",
+		"src" :"img/projects/pragyan.jpg",
 		"id":"#content_cms"
     },
 	{
 		"project": "Courses App",
-		"src" :"img/joker.jpg",
+		"src" :"img/projects/coursesapp.jpg",
 		"id":"#content_courses"
 	},
 	{
 		"project": "Gracenote",
-		"src" :"img/joker.jpg",
+		"src" :"img/projects/gracenote.jpg",
 		"id":"#content_gracenote"
     }
 	];
@@ -406,12 +406,12 @@ myApp.controller('Project-down', ['$scope', function ($scope) {
 													
     $scope.bios.profile = [{						// Include data here for projects page
 		"project": "Grunt-ffdevtools",
-		"src" :"img/h.jpg",
+		"src" :"img/projects/gruntffdevtools.jpg",
 		"id":"#grunt_ffdevtools"
     },
 	{
 		"project": "Luapegjs",
-		"src" :"img/h.jpg",
+		"src" :"img/projects/lua.jpg",
 		"id":"#luapegjs"
 	}
 	];
